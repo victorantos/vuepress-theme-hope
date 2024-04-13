@@ -1,25 +1,25 @@
 import type {
-  flexsearchCustomFieldFormatter,
-  flexsearchHotKeyOptions,
-  flexsearchLocaleConfig,
+  FlexsearchCustomFieldFormatter,
+  FlexsearchHotKeyOptions,
+  FlexsearchLocaleConfig,
 } from "../shared/index.js";
 
-type flexsearchClientCustomFiledConfig = Record<
+type FlexsearchClientCustomFiledConfig = Record<
   string,
-  flexsearchCustomFieldFormatter
+  FlexsearchCustomFieldFormatter
 >;
 
 declare const SEARCH_PRO_ENABLE_AUTO_SUGGESTIONS: boolean;
-declare const SEARCH_PRO_CUSTOM_FIELDS: flexsearchClientCustomFiledConfig;
+declare const SEARCH_PRO_CUSTOM_FIELDS: FlexsearchClientCustomFiledConfig;
 declare const SEARCH_PRO_OPTIONS: {
   searchDelay: number;
   suggestDelay: number;
   queryHistoryCount: number;
   resultHistoryCount: number;
-  hotKeys: flexsearchHotKeyOptions[];
+  hotKeys: FlexsearchHotKeyOptions[];
   worker: string;
 };
-declare const SEARCH_PRO_LOCALES: flexsearchLocaleConfig;
+declare const SEARCH_PRO_LOCALES: FlexsearchLocaleConfig;
 
 export const flexsearchOptions = SEARCH_PRO_OPTIONS;
 

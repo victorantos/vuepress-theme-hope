@@ -1,7 +1,7 @@
-import type { flexsearchLocaleConfig } from "../shared/index.js";
+import type { FlexsearchLocaleConfig } from "../shared/index.js";
 
 /** Multi language config for flexsearch popup */
-export const flexsearchLocales: flexsearchLocaleConfig = {
+export const flexsearchLocales: FlexsearchLocaleConfig = {
   "/en/": {
     cancel: "Cancel",
     placeholder: "Search",

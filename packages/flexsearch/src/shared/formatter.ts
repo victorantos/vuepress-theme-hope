@@ -1,1 +1,1 @@
-export type flexsearchCustomFieldFormatter = string | Record<string, string>;
+export type FlexsearchCustomFieldFormatter = string | Record<string, string>;

@@ -5,7 +5,7 @@ import { addAllAsync, createIndex } from "slimsearch";
 import type { App, Page } from "vuepress/core";
 
 import type {
-  flexsearchCustomFieldOptions,
+  FlexsearchCustomFieldOptions,
   flexsearchPluginOptions,
 } from "./options.js";
 import type { Store } from "./utils.js";
@@ -70,7 +70,7 @@ const renderHeader = (node: Element): string => {
 export const generatePageIndex = (
   page: Page<{ excerpt?: string }>,
   store: Store,
-  customFieldsGetter: flexsearchCustomFieldOptions[] = [],
+  customFieldsGetter: FlexsearchCustomFieldOptions[] = [],
   indexContent = false,
 ): IndexItem[] => {
   const { contentRendered, data, title } = page;

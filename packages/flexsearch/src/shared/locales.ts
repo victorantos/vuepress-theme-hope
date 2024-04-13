@@ -5,7 +5,7 @@ import type { ExactLocaleConfig } from "@vuepress/helper";
  *
  * `vuepress-plugin-flexsearch` 插件的多语言配置
  */
-export interface flexsearchLocaleData {
+export interface FlexsearchLocaleData {
   /**
    * Search box placeholder
    *
@@ -105,4 +105,4 @@ export interface flexsearchLocaleData {
   emptyResult: string;
 }
 
-export type flexsearchLocaleConfig = ExactLocaleConfig<flexsearchLocaleData>;
+export type FlexsearchLocaleConfig = ExactLocaleConfig<FlexsearchLocaleData>;

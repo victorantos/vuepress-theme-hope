@@ -1,4 +1,4 @@
-export interface flexsearchHotKeyOptions {
+export interface FlexsearchHotKeyOptions {
   /**
    * Value of `event.key` to trigger the hot key
    *

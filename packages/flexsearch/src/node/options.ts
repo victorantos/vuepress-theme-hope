@@ -1,12 +1,12 @@
 import type { LocaleConfig, Page } from "vuepress/core";
 
 import type {
-  flexsearchCustomFieldFormatter,
-  flexsearchHotKeyOptions,
-  flexsearchLocaleData,
+  FlexsearchCustomFieldFormatter,
+  FlexsearchHotKeyOptions,
+  FlexsearchLocaleData,
 } from "../shared/index.js";
 
-export interface flexsearchIndexOptions {
+export interface FlexsearchIndexOptions {
   /**
    * Function to tokenize the index field item.
    *
@@ -21,7 +21,7 @@ export interface flexsearchIndexOptions {
   processTerm?: (term: string) => string | string[] | null | undefined | false;
 }
 
-export interface flexsearchCustomFieldOptions {
+export interface FlexsearchCustomFieldOptions {
   /**
    * Custom field getter
    *
@@ -49,7 +49,7 @@ export interface flexsearchCustomFieldOptions {
    *
    * @default `$content`
    */
-  formatter?: flexsearchCustomFieldFormatter;
+  formatter?: FlexsearchCustomFieldFormatter;
 }
 
 export interface DeprecatedflexsearchPluginOptions {
@@ -140,7 +140,7 @@ export interface flexsearchPluginOptions
   /**
    * Custom field for search
    */
-  customFields?: flexsearchCustomFieldOptions[];
+  customFields?: FlexsearchCustomFieldOptions[];
 
   /**
    * Specify the [event.key](http://keycode.info/) of the hotkeys
@@ -156,7 +156,7 @@ export interface flexsearchPluginOptions
    *   { key: "/", ctrl: true },
    *  ]
    */
-  hotKeys?: flexsearchHotKeyOptions[];
+  hotKeys?: FlexsearchHotKeyOptions[];
 
   /**
    * Output worker filename
@@ -185,7 +185,7 @@ export interface flexsearchPluginOptions
    *
    * @see [默认配置](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/packages/flexsearch/src/node/locales.ts)
    */
-  locales?: LocaleConfig<flexsearchLocaleData>;
+  locales?: LocaleConfig<FlexsearchLocaleData>;
 
   /**
    * Result Sort strategy
@@ -205,14 +205,14 @@ export interface flexsearchPluginOptions
    *
    * 创建索引选项
    */
-  indexOptions?: flexsearchIndexOptions;
+  indexOptions?: FlexsearchIndexOptions;
 
   /**
    * Create Index option per locale
    *
    * 按语言的创建索引选项
    */
-  indexLocaleOptions?: Record<string, flexsearchIndexOptions>;
+  indexLocaleOptions?: Record<string, FlexsearchIndexOptions>;
 
   /**
    * Filter pages to be indexed
