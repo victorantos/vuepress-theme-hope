@@ -1,0 +1,7 @@
+declare module "vuepress-plugin-flexsearch/result" {
+  import type { DefineComponent } from "vue";
+
+  const component: DefineComponent;
+
+  export default component;
+}
