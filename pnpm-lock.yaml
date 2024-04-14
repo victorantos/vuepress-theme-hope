@@ -862,12 +862,12 @@ importers:
       chokidar:
         specifier: ^3.6.0
         version: 3.6.0
+      flexsearch:
+        specifier: ^0.7.43
+        version: 0.7.43
       sass-loader:
         specifier: ^14.0.0
         version: 14.2.0(sass@1.75.0)(webpack@5.91.0)
-      slimsearch:
-        specifier: ^2.1.1
-        version: 2.1.1
       vue:
         specifier: ^3.4.21
         version: 3.4.21(typescript@5.4.5)
@@ -8782,6 +8782,10 @@ packages:
   /flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
     dev: true
+
+  /flexsearch@0.7.43:
+    resolution: {integrity: sha512-c5o/+Um8aqCSOXGcZoqZOm+NqtVwNsvVpWv6lfmSclU954O3wvQKxxK8zj74fPaSJbXpSLTs4PRhh+wnoCXnKg==}
+    dev: false
 
   /flowchart.ts@3.0.0:
     resolution: {integrity: sha512-yD+0wVJHvV6SutpNpao5S0hQp+7tnPuETtPORIodGEuUAP8LzegVVSUy+NFDWU9pUO2F1E+PikBD83PddoCfnw==}
