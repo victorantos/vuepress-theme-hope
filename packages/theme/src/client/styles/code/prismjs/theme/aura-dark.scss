@@ -1,0 +1,100 @@
+/**
+ * https://github.com/daltonmenezes/aura-theme
+ */
+
+@use "../../var";
+
+#app {
+  @include var.color($code-color: #bfbdb6, $code-bg-color: #15141b);
+}
+
+pre[class*="language-"] {
+  // Selection
+  &::selection,
+  ::selection {
+    background: rgb(61 55 94 / 50%);
+  }
+}
+
+.token.tag {
+  color: #82e2ff;
+}
+
+.token.variable {
+  color: #edecee;
+}
+
+.token.keyword {
+  color: #a277ff;
+}
+
+.token.operator {
+  color: #a277ff;
+}
+
+.token.attr-name {
+  color: #a277ff;
+}
+
+.token.selector {
+  color: #a277ff;
+}
+
+.token.punctuation {
+  color: rgb(237 236 238 / 37%);
+}
+
+.token.constant {
+  color: #a277ff;
+}
+
+.token.hexcode {
+  color: #a277ff;
+}
+
+.token.attr-value,
+.token.string {
+  color: #61ffca;
+}
+
+.token.inserted {
+  color: #61ffca;
+}
+
+.token.changed {
+  color: #ffca85;
+}
+
+.token.function {
+  color: #ffca85;
+}
+
+.token.deleted {
+  color: #ff6767;
+}
+
+.token.type-hint,
+.token.builtin {
+  color: #f694ff;
+}
+
+.token.property {
+  color: #f694ff;
+}
+
+.token.comment {
+  color: rgb(237 236 238 / 37%);
+}
+
+.token.class-name {
+  color: #82e2ff;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}

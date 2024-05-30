@@ -1,0 +1,105 @@
+/**
+ * https://github.com/ayu-theme/vscode-ayu
+ */
+
+@use "../../var";
+
+#app {
+  @include var.color($code-color: #5c6166, $code-bg-color: #f8f9fa);
+}
+
+pre[class*="language-"] {
+  // Selection
+  &::selection,
+  ::selection {
+    background: rgb(3 91 214 / 15%);
+  }
+}
+
+.token.comment {
+  color: rgb(120 123 128 / 60%);
+  font-style: italic;
+}
+
+.token.string {
+  color: #86b300;
+}
+
+.token.symbol {
+  color: #86b300;
+}
+
+.token.regex {
+  color: #4cbf99;
+}
+
+.token.char {
+  color: #4cbf99;
+}
+
+.token.class-name,
+.token.constant {
+  color: #4cbf99;
+}
+
+.token.number {
+  color: #a37acc;
+}
+
+.token.builtin {
+  color: #a37acc;
+}
+
+.token.variable {
+  color: #5c6166;
+}
+
+.token.keyword,
+.token.operator {
+  color: #ed9366;
+}
+
+.token.punctuation {
+  color: #ed9366;
+}
+
+.token.function {
+  color: #f2ae49;
+}
+
+.token.attr-name {
+  color: #f2ae49;
+}
+
+.token.selector {
+  color: #f2ae49;
+}
+
+.token.tag {
+  color: #55b4d4;
+}
+
+.token.property {
+  color: #55b4d4;
+}
+
+.token.inserted {
+  color: #6cbf43;
+}
+
+.token.changed {
+  color: #478acc;
+}
+
+.token.deleted {
+  color: #ff7383;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
