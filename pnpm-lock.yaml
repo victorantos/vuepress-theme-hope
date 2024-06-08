@@ -171,8 +171,8 @@ importers:
         specifier: 14.2.1
         version: 14.2.1(sass@1.77.4)(webpack@5.91.0(esbuild@0.21.4))
       vidstack:
-        specifier: 1.11.21
-        version: 1.11.21
+        specifier: 1.11.22
+        version: 1.11.22
       vue:
         specifier: 3.4.27
         version: 3.4.27(typescript@5.4.5)
@@ -489,8 +489,8 @@ importers:
         specifier: 14.2.1
         version: 14.2.1(sass@1.77.4)(webpack@5.91.0(esbuild@0.21.4))
       vidstack:
-        specifier: 1.11.21
-        version: 1.11.21
+        specifier: 1.11.22
+        version: 1.11.22
       vue:
         specifier: 3.4.27
         version: 3.4.27(typescript@5.4.5)
@@ -8901,6 +8901,10 @@ packages:
 
   vidstack@1.11.21:
     resolution: {integrity: sha512-DtsbT8zsLUCF27vRheFLEnpUzy0TsLzIt2EqiZyYvwho7nKgiVR32GuJVKRj9BTj80SSRxzLQ0/tx99fum6Rmw==}
+    engines: {node: '>=18'}
+
+  vidstack@1.11.22:
+    resolution: {integrity: sha512-prJUMxRNSJElzVv6imqAoZMR/x+mYSTC2bCjovXToE3tMGrBCFlYLwuaOht55vm0QS6oU03dDp3tqKGXqhMZOg==}
     engines: {node: '>=18'}
 
   vinyl-contents@2.0.0:
@@ -18262,6 +18266,11 @@ snapshots:
   vary@1.1.2: {}
 
   vidstack@1.11.21:
+    dependencies:
+      media-captions: 1.0.3
+      unplugin: 1.10.1
+
+  vidstack@1.11.22:
     dependencies:
       media-captions: 1.0.3
       unplugin: 1.10.1
